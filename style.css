@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: red;
+    --cor-secundaria: #fff;
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    color: var(--cor-secundaria);
+}
+
+* {
+    margin: 0;
+}
+
+/* Cabeçalho */
+.cabecalho__menu {
+    padding: 2% 0 2% 15%;
+    display: flex;
+    gap: 80px;
+    background-color: var(--cor-primaria);
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+
+
+.rodape {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+}
