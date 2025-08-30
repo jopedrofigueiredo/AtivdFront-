@@ -20,16 +20,12 @@ body {
 
 /* CABEÇALHO */
 .cabecalho__menu {
-    padding: 2% 0;
+    padding: 2% 0 2% 15%;
     display: flex;
-    justify-content: center; /* centraliza os links */
-    gap: 40px;
+    gap: 80px;
     background-color: var(--cor-primaria);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 10;
 }
+
 
 .cabecalho__menu__link {
     font-size: 24px;
@@ -213,3 +209,4 @@ main {
     padding-top: 100px;
 }
 
+@MEDIA
