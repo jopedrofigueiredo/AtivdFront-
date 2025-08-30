@@ -3,17 +3,19 @@
 :root {
     --cor-primaria: red;
     --cor-secundaria: #fff;
+    --cor-terciaria: #f5c542;
     --fonte-principal: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
 }
 
-body{
+body {
     box-sizing: border-box;
-    color: var(--cor-secundaria);
-}
-
-* {
     margin: 0;
+    padding: 0;
+    font-family: var(--fonte-secundaria);
+    background-color: #111;
+    color: var(--cor-secundaria);
+    text-align: center; 
 }
 
 .cabecalho__menu {
@@ -23,19 +25,172 @@ body{
     background-color: var(--cor-primaria);
 }
 
+
 .cabecalho__menu__link {
-    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 600;
     color: var(--cor-secundaria);
     text-decoration: none;
-    
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.titulo-destaque{
+.cabecalho__menu__link:hover {
+    transform: scale(1.1);
     color: var(--cor-terciaria);
 }
 
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh;
+    background: url("/assets/R.png") center/cover no-repeat;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero__content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.hero__content h1 {
+    font-family: var(--fonte-principal);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: var(--cor-terciaria);
+}
+
+.hero__content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn-cta {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: var(--cor-primaria);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-cta:hover {
+    transform: scale(1.1);
+    background: var(--cor-terciaria);
+}
+
+
+.vantagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;
+    margin: 60px 20px;
+}
+
+.vantagens__grid {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.vantagem-card {
+    background: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    width: 250px;
+}
+
+.vantagem-card h3 {
+    color: red;
+}
+
+.vantagem-card p {
+    color: white;
+}
+
+.vantagem-card:hover {
+    transform: translateY(-10px);
+}
+
+
+.produtos-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 60px 20px;
+}
+
+.produtos-home__grid {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.produto-card {
+    background: #222;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 300px;
+    color: white;
+}
+
+.produto-card img {
+    width: 100%;
+    display: block;
+}
+
+.produto-card h3 {
+    color: yellow;
+}
+
+.produto-card p,
+.produto-card .preco {
+    color: white;
+}
+
+.produto-card:hover {
+    transform: translateY(-10px);
+}
+
+.btn-card {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-card:hover {
+    transform: scale(1.1);
+    background: yellow;
+    color: black;
+}
 
 
 .rodape {
@@ -46,3 +201,9 @@ body{
     font-family: var(--fonte-secundaria);
     font-weight: 400;
 }
+
+
+main {
+    padding-top: 100px;
+}
+
