@@ -16,7 +16,6 @@ body{
     margin: 0;
 }
 
-/* Cabeçalho */
 .cabecalho__menu {
     padding: 2% 0 2% 15%;
     display: flex;
