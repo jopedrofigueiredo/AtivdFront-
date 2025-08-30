@@ -29,15 +29,94 @@ body{
     font-size: 24px;
     font-weight: 600;
     color: var(--cor-secundaria);
-    text-decoration: none;
+    text-decoration: none;    
+}
+
+
+/* main */
+.secao__formulario {
+    padding: 50px 15%;
     
 }
 
-.titulo-destaque{
-    color: var(--cor-terciaria);
+.secao__formulario form {
+    height: 1000px;
+    border: 3px solid black;
+    background-color: gray;
+    border-radius: 25px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px
 }
 
-/* main */
+.secao__formulario form h2 {
+    margin: 50px 0;
+    font-size: 32px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+.secao__formulario form h2:hover {
+    transform: scale(1.15);
+    transition: 300ms;
+}
+
+.secao__formulario form input {
+    width: 75%; 
+    height: 40px;
+    border-radius: 12px;
+    padding: 0 15px;
+    border: 2px solid black;
+    font-size: 16px;
+    color: lightgray;
+    font-family: var(--fonte-secundaria);
+}
+
+.secao__formulario form textarea {
+    width: 75%;
+    border-radius: 12px;
+    padding: 15px 15px;
+    border: 2px solid black;
+    font-size: 16px;
+    color: lightgray;
+    font-family: var(--fonte-secundaria);
+
+}
+
+.secao__formulario form input:hover,
+.secao__formulario form textarea:hover {
+    transform: scale(1.05);
+    transition: 300ms;
+    background-color: #fb7e7f;
+}
+
+.secao__formulario form input:focus,
+.secao__formulario form textarea:focus {
+    transform: scale(1.05);
+    background-color: #fb7e7f;
+}
+
+.secao__formulario form button {
+    margin: 30px 0;
+    width: 50%;
+    height: 75px;
+    border-radius: 12px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.secao__formulario form button:hover {
+    background-color: var(--cor-primaria);
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+
+
 
 
 /* rodapé */
@@ -48,4 +127,39 @@ body{
     text-align: center;
     font-family: var(--fonte-secundaria);
     font-weight: 400;
+}
+
+
+
+@media (max-width: 830px) {
+    .cabecalho__menu {
+        padding: 2% 5% 2% 5%;
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+        background-color: var(--cor-primaria);
+    }
+
+    .cabecalho__menu__link {
+        font-family: var(--fonte-secundaria);
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--cor-secundaria);
+        text-decoration: none;    
+        text-align: center;
+    }
+}
+
+@media (max-width: 567px) {
+    .cabecalho__menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .cabecalho__menu__link {
+        padding: 15px 0;
+        border-bottom: 2px solid black;
+    }
 }
