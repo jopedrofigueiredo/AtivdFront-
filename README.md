@@ -1,6 +1,6 @@
 #  Autoflex - Site de Venda de Carros
 
-Este projeto consiste em um **site responsivo de venda de carros**, desenvolvido com **HTML, CSS e Bootstrap**, que apresenta um catálogo de veículos modernos, layout em grid, cabeçalho de navegação e rodapé personalizado.  
+Este projeto consiste em um site de venda de carros desenvolvido com **HTML, CSS e Bootstrap**, que apresenta um catálogo de veículos super modernos!  
 
 
 
