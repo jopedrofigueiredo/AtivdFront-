@@ -1,29 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autoflex</title>
+    <title>AutoFlex</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="pages/produtos.html">produtos</a>
-            <a class="cabecalho__menu__link" href="pages/contato.html">contato</a>
+            <a class="cabecalho__menu__link" href="pages/produtos.html">Produtos</a>
+            <a class="cabecalho__menu__link" href="pages/contato.html">Contato</a>
             <a class="cabecalho__menu__link" href="pages/quemSomos.html">Quem Somos</a>
         </nav>
     </header>
 
     <main>
-   a
-   </main>
-       <footer class="rodape">
-        <p>2025 Autoflex. Todos os direitos reservados</p>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero__content">
+                <h1>Bem-vindo à <span class="highlight">AutoFlex</span></h1>
+                <p>O seu próximo carro está aqui. Preço justo, qualidade e confiança.</p>
+                <a href="pages/produtos.html" class="btn-cta">Ver Ofertas</a>
+            </div>
+        </section>
+
+        <!-- VANTAGENS -->
+<section class="vantagens">
+    <h2>Por que escolher a AutoFlex?</h2>
+    <div class="vantagens__grid">
+        <<div class="vantagem-card">
+    <h3>Variedade</h3>
+    <p>Modelos novos e seminovos para todos os gostos.</p>
+</div>
+<div class="vantagem-card">
+    <h3>Financiamento Fácil</h3>
+    <p>Condições que cabem no seu bolso.</p>
+</div>
+<div class="vantagem-card">
+    <h3>Garantia</h3>
+    <p>Confiança e suporte pós-venda garantidos.</p>
+</div>
+    </div>
+</section>
+
+        <!-- CHAMADA PARA PRODUTOS -->
+        <section class="produtos-home">
+            <h2>Destaques da Semana</h2>
+            <div class="produtos-home__grid">
+                <div class="produto-card">
+                    <img src="/assets/OIP.webp" alt="Carro 1">
+                    <h3>Honda Civic 2022</h3>
+                    <a href="pages/produtos.html" class="btn-card">Ver mais</a>
+                </div>
+                <div class="produto-card">
+                    <img src="/assets//Chevrolet-Onix-2023-2.jpg" alt="Carro 2">
+                    <h3>Chevrolet Onix 2023</h3>
+                    <a href="pages/produtos.html" class="btn-card">Ver mais</a>
+                </div>
+                <div class="produto-card">
+                    <img src="/assets/jeep_compass_s_2022-14-1920x1183.jpg" alt="Carro 3">
+                    <h3>Jeep Compass 2022</h3>
+                    <a href="pages/produtos.html" class="btn-card">Ver mais</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>2025 AutoFlex. Todos os direitos reservados</p>
     </footer>
 </body>
-
-
 </html>
